@@ -15,5 +15,5 @@ LEFT JOIN user ON user.user_id = booking.user_id
 UNION
 
 SELECT *
-FROM booking
+FROM booking as FULL OUTER JOIN
 RIGHT JOIN user ON user.user_id = booking.user_id;
